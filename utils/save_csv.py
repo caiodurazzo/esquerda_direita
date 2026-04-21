@@ -10,6 +10,6 @@ def save_csv(df: pd.DataFrame, file_name):
     
     file_path = os.path.join(data_folder, file_name)
     
-    df.to_csv(file_path, index = True)
+    df.to_csv(file_path, index = False)
 
     print(f'Base salva em {file_path}')
